@@ -33,7 +33,8 @@ marked.setOptions({
   pedantic: false,
   sanitize: true,
   smartLists: true,
-  smartypants: false
+  smartypants: false,
+  headWithAnchor:true,
 });
 
 console.log(marked('I am using __markdown__.'));
@@ -83,6 +84,13 @@ async highlighting. If the `options` argument is omitted, this can be used as
 the second argument.
 
 ## Options
+
+
+### headWithAnchor
+
+Type:Boolean
+
+生成head元素的时候是否加上默认的锚记
 
 ### highlight
 
